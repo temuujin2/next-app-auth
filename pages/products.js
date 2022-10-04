@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from '../styles/Home.module.css'
-import arrow from '../images/chevron_right.png'
+
 
 const defaultEndpoint = `https://rickandmortyapi.com/api/character/`;
 
@@ -76,7 +76,6 @@ export default function Products({data}) {
     });
   }
 
-  console.log('data',data)
   return (
     <div className={styles.post_wrapp} >
       <div className={styles.post_header}>
@@ -102,7 +101,7 @@ export default function Products({data}) {
                   <div className={styles.post_text_wrapp}>
                     <h3>{ name }</h3>
                     <p>There are times when our work impacts us 
-                      deeply — sometimes in ways we neither 
+                      deeply — sometimes in ways we neither 
                       acknowledge nor understand</p>
                   </div>
                   <div className={styles.post_bottom}>
